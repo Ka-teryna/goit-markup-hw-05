@@ -403,6 +403,20 @@
 </a></li>
         </ul>
       </div>
+      <div class="foot-subscribe">
+        <p class="foot-social-text">Subscribe</p>
+        <form class="foot-form">
+          <label class="foot-form-label">
+            <input class="foot-form-input" type="email" placeholder="Email" />
+            <button class="btn foot-btn" type="submit">Subscribe<svg class="foot-icon-form" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+
+            </button>
+            
+          </label>
+        </form>
+      </div>
       </div>
     </footer>
 
@@ -451,12 +465,16 @@
               
             </div>
             <div class="check-container">
-                <div class="modal-check">
-                  <input class="modal-check-btn" type="checkbox" name="hobby" value="reading" />
-                
-                    <label  class="modal-form-text"><span>I accept the terms and conditions of the</span><a class="modal-link" href=""> Privacy Policy</a>
-                  </label>
-                 
+              <input type="checkbox" class="modal-check-btn visually-hidden"  
+              name="user-privacy" id="user-privacy" value="true"/>
+              <label class="check-label" for="user-privacy">
+              <span class="check-span">
+                  <svg class="icon-input" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                  </svg>
+              </span>
+                I accept the terms and conditions of the  
+                    <a href="#" class="modal-link"> Privacy Policy</a>
                 </div>
             </div>
               <button class="btn" type="submit">Send</button>

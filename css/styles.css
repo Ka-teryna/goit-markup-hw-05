@@ -88,7 +88,7 @@ p {
   background-color: #4d5ae5;
   border: none;
   margin: 0 auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
 .btn:focus {
@@ -460,6 +460,55 @@ position: relative;
   background-color: #31d0aa;
 }
 
+.foot-subscribe {
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot-form {
+
+}
+
+.foot-form-label {
+  display: flex;
+  gap: 24px;
+}
+
+.foot-form-input {
+  border: 1px solid #fff;
+border-radius: 4px;
+width: 264px;
+height: 40px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+font-weight: 400;
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+color: #fff;
+background-color: transparent;
+padding-left: 16px;
+}
+
+.foot-btn {
+  display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 16px;
+padding: 8px 24px;
+width: 165px;
+height: 40px;
+box-shadow: none;
+background-color: #4d5ae5;
+border: none;
+margin: 0 auto;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foot-icon-form {
+  fill: #FFFFFF;
+}
 /* modal */
 
 .backdrop {
@@ -610,13 +659,6 @@ textarea::placeholder {
   margin-bottom: 24px;
 }
 
-.modal-check {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-}
-
 .modal-check-btn {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -625,10 +667,52 @@ textarea::placeholder {
 }
 
 .modal-link {
-
   line-height: 1.33;
-text-decoration: underline;
-text-decoration-skip-ink: none;
-color: #4d5ae5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.check-label {
+
+  font-size: 12px;
+  line-height: 1.17; 
+  letter-spacing: 0.04em; 
+  color: #8e8f99;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-span {
+  width: 16px; 
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4); 
+  border-radius: 2px; 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.check-input:checked + .check-label .check-span {
+  background-color:#404bbf;
+  border: none;
+  fill: #F4F4FD;}   
+
+
 
