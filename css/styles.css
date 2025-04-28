@@ -599,7 +599,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .form-group {
   margin-bottom: 8px;
-  
 }
 
 .modal-form-text, .modal-link {
@@ -609,13 +608,12 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8E8F99;
-  width: 100%;
   margin-bottom: 4px;
 }
 
 .form-field {
   position: relative;
-  width: 100%;
+
 }
 
 .form-field-input {
@@ -717,9 +715,8 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   justify-content: center;
   fill: transparent;
+  /* flex-shrink: 0; */
 }
-
-
 
 .modal-check-btn:checked + .check-label .check-span {
   background-color: #404bbf;
@@ -735,7 +732,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #4d5ae5;
   text-align: center;
   margin-bottom: 0;
-  
 }
 
 
