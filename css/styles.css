@@ -694,13 +694,11 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-label {
-  display: flex;
-  align-items: center;
   font-size: 12px;
   line-height: 1.17; 
   letter-spacing: 0.04em; 
   color: #8e8f99;
-  white-space: nowrap;
+ 
 
 }
 
@@ -715,7 +713,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   justify-content: center;
   fill: transparent;
-  /* flex-shrink: 0; */
+ 
 }
 
 .modal-check-btn:checked + .check-label .check-span {
@@ -732,6 +730,8 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #4d5ae5;
   text-align: center;
   margin-bottom: 0;
+  display: inline-flex;
+  
 }
 
 
